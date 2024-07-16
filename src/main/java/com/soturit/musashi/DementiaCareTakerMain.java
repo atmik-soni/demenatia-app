@@ -9,10 +9,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @SpringBootApplication
-public class DamatiaCareTaker {
+public class DementiaCareTakerMain {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DamatiaCareTaker.class, args);
+		SpringApplication.run(DementiaCareTakerMain.class, args);
 	}
 
 }
