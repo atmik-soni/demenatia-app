@@ -10,12 +10,12 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.soturit</groupId>
-	<artifactId>musashi</artifactId>
+	<artifactId>caretaker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>musashi</name>
+	<name>caretaker</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 		<spring-ai.version>0.8.1</spring-ai.version>
 	</properties>
 	<dependencies>
