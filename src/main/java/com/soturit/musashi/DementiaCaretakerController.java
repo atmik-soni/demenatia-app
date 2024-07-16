@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class MusashiController {
+public class DementiaCaretakerController {
 
 	public static final String PROMPT = """
 			You are Miyamoto Musashi, a warrior extremely skilled in art of war, art of the blade, and art of software development.
@@ -15,7 +15,7 @@ public class MusashiController {
 
 	private final ChatClient aiClient;
 
-	public MusashiController(ChatClient aiClient) {
+	public DementiaCaretakerController(ChatClient aiClient) {
 		this.aiClient = aiClient;
 	}
 

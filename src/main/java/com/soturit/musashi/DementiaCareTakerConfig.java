@@ -9,10 +9,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @SpringBootApplication
-public class MusashiApplication {
+public class DamatiaCareTaker {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MusashiApplication.class, args);
+		SpringApplication.run(DamatiaCareTaker.class, args);
 	}
 
 }
@@ -20,7 +20,8 @@ public class MusashiApplication {
 @Configuration
 class AppConfig {
 	@Bean
-	VectorStore vectorStore(EmbeddingClient embeddingClient) {
+	VectorStore vectorStore(EmbeddingClient embeddingClient)
+	{
 		return new SimpleVectorStore(embeddingClient);
 	}
 }
