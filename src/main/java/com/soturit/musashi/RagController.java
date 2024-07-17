@@ -10,6 +10,8 @@ import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.ai.chat.prompt.SystemPromptTemplate;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.VectorStore;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,8 +20,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RagController {
 
+    @Value("classpath:prompt.spt")
+    private Resource stpResource;
+
     private final ChatClient aiClient;
     private final VectorStore vectorStore;
+
+
 
     public RagController(ChatClient aiClient, VectorStore vectorStore) {
         this.aiClient = aiClient;
