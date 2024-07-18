@@ -15,7 +15,7 @@ import jakarta.annotation.PostConstruct;
 public class PdfFileReader {
     private final VectorStore vectorStore;
 
-    @Value("classpath:TIOBE.pdf")
+    @Value("classpath:dementia.pdf")
     private Resource pdfResource;
 
     public PdfFileReader(VectorStore vectorStore) {

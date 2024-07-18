@@ -20,13 +20,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RagController {
 
-    @Value("classpath:prompt.spt")
-    private Resource stpResource;
+   /* @Value("classpath:prompt.spt")
+    private Resource stpResource;*/
 
     private final ChatClient aiClient;
     private final VectorStore vectorStore;
 
-
+    //pl
 
     public RagController(ChatClient aiClient, VectorStore vectorStore) {
         this.aiClient = aiClient;
