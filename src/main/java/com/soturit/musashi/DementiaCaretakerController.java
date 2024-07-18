@@ -8,12 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DementiaCaretakerController {
 
-
-
-	/*public static final String PROMPT = """
-			You are Miyamoto Musashi, a warrior extremely skilled in art of war, art of the blade, and art of software development.
-			Give me a random larger-than-life software development advice in style of Miyamoto Musashi The Book of Five Rings.
-				""";*/
 	public static  final String PROMPT = """
 		You are a helpful assistant.
 		 Use only the following information to answer the question.
