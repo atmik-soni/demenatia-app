@@ -19,6 +19,8 @@ mvn spring-boot:run
 REST API will be available at `http://localhost:8080`. Two demos are in:
 
 <http://localhost:8080/robobrain/musashi>
-<http://localhost:8080/robobrain/rag>
+
+http://localhost:8080/dementia/rag?query=I%20dont%20want%20to%20bath
+
 
 For PDF reading example source is TIOBE.pdf that's simply a snapshot of TIOBE index page at <http://www.tiobe.com/tiobe-index/>
